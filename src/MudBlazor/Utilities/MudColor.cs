@@ -56,6 +56,11 @@ namespace MudBlazor.Utilities
 
         #region Constructor
 
+        // Empty constructor for serialization
+        public MudColor()
+        {
+        }
+
         public MudColor(double h, double s, double l, double a)
          : this(h, s, l, (int)((a * 255.0).EnsureRange(255)))
         {
